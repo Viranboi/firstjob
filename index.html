@@ -2,6 +2,11 @@
 <html>
 
 <head>
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
   <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,7 +17,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Lodge</title>
+  <title>GREEN BACK</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
@@ -26,9 +31,30 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  
 </head>
 
 <body>
+<!-- Mobile Menu Icon -->
+<div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+  &#9776; <!-- Hamburger icon (☰) -->
+</div>
+
+<!-- Mobile Menu Links -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<script>
+  const menuIcon = document.getElementById("menu-icon");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuIcon.addEventListener("click", () => {
+    mobileMenu.classList.toggle("open");
+  });
+</script>
 
   <div class="hero_area">
     <!-- header section strats -->
@@ -38,7 +64,7 @@
           <a class="navbar-brand" href="index.html">
             <img src="images/logo.png" alt="">
             <span>
-              Lodge
+              GREEN BACK
             </span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,13 +81,13 @@
                   <a class="nav-link" href="about.html"> About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="jewellery.html">Jewellery </a>
+                  <a class="nav-link" href="bewell.html">GREEN BACK </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Login</a>
+                  <a class="nav-link" href="#">welcome</a>
                 </li>
               </ul>
 
@@ -85,7 +111,7 @@
     <!-- slider section -->
     <section class=" slider_section position-relative">
       <div class="design-box">
-        <img src="images/design-1.png" alt="">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/005/139/141/small/bottle-red-of-wine-with-a-glass-on-a-black-background-photo.jpg" alt="">
       </div>
       <div class="slider_number-container d-none d-md-block">
         <div class="number-box">
@@ -94,15 +120,13 @@
           </span>
           <hr>
           <span class="jwel">
-            J <br>
+            B <br>
             e <br>
             w <br>
             e <br>
             l <br>
             l <br>
-            e <br>
-            r <br>
-            y
+            
           </span>
           <hr>
           <span>
@@ -123,24 +147,24 @@
                 <div class="col-md-6">
                   <div class="detail_box">
                     <h2>
-                      <span> New Collection</span>
+                      <span> Executive Chefs</span>
                       <hr>
                     </h2>
                     <h1>
-                      Jewellery
+                      GREEN BACK
                     </h1>
                     <p>
-                      Lorem ipsum dolor sit amet consec tetur adipiscing elit elit at felislacinia
-                      aptent taciti sociosqu ad litora torquent per conubia nostra
+                      GREEN BACK Restaurant has the best Executive Chefs, crafting exceptional dishes with expert skill and creativity.
                     </p>
                     <div>
-                      <a href="">Shop Now</a>
+                      <a href="menu.html">View MENU</a>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
+                    <img src="https://i.postimg.cc/d1hH827b/377583b5-0c00-4c6b-a3fb-cd837a654633-LE-upscale-balanced-light-ai-60.jpg" alt="Profile Image" style="width: 3S00px; height: 400px; border-radius: 50%; object-fit: cover;">
+
                   </div>
                 </div>
               </div>
@@ -150,24 +174,23 @@
                 <div class="col-md-6">
                   <div class="detail_box">
                     <h2>
-                      <span> New Collection</span>
+                      <span> New Menu</span>
                       <hr>
                     </h2>
                     <h1>
-                      Jewellery
+                      GREEN BACK
                     </h1>
                     <p>
-                      Lorem ipsum dolor sit amet consec tetur adipiscing elit elit at felislacinia
-                      aptent taciti sociosqu ad litora torquent per conubia nostra
+                      At GREEN BACK Restaurant, every dish is crafted with passion, fresh ingredients, and bold flavors. From sizzling grills to rich pastas and mouthwatering desserts, our menu offers something unforgettable for every taste. Discover why we're known for the best food in town!
                     </p>
                     <div>
-                      <a href="">Shop Now</a>
+                      <a href="menu.html">View MENU</a>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
+                    <img src="https://i.postimg.cc/FFCrbP3n/7a64a424-4f9d-4736-ba99-73f2dc053233.jpg" alt="Image 2" style="width: 400px; height: 200px; border-radius: 50%; object-fit: cover;">
                   </div>
                 </div>
               </div>
@@ -177,24 +200,26 @@
                 <div class="col-md-6">
                   <div class="detail_box">
                     <h2>
-                      <span> New Collection</span>
+                      <span> 12:PM place</span>
                       <hr>
                     </h2>
                     <h1>
-                      Jewellery
+                      GREEN BACK
                     </h1>
                     <p>
-                      Lorem ipsum dolor sit amet consec tetur adipiscing elit elit at felislacinia
-                      aptent taciti sociosqu ad litora torquent per conubia nostra
+                      At GREEN BACK Restaurant, we offer a comfortable and welcoming dining space where you can relax and enjoy your meal in a peaceful atmosphere.
                     </p>
                     <div>
-                      <a href="">Shop Now</a>
+                      <a href="menu.html">View MENU</a>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
+                    <img src="https://i.postimg.cc/TP57S34D/Screenshot-at-2025-06-03-13-03-57.png" 
+     alt="Triangle Image" 
+     style="width: 300px; height: auto; clip-path: polygon(50% 0%, 0% 100%, 100% 100%); object-fit: cover;">
+
                   </div>
                 </div>
               </div>
@@ -219,11 +244,11 @@
             </h6>
           </div>
           <div class="img-box">
-            <img src="images/i-1.png" alt="">
+            <img src="https://img.freepik.com/free-photo/red-wine-pouring-into-wine-glass_53876-96718.jpg?semt=ais_hybrid&w=740" alt="">
           </div>
           <div class="name">
             <h5>
-              Bracelet
+              Red wine
             </h5>
           </div>
         </div>
@@ -234,11 +259,11 @@
             </h6>
           </div>
           <div class="img-box">
-            <img src="images/i-2.png" alt="">
+            <img src="https://t4.ftcdn.net/jpg/10/48/89/07/360_F_1048890769_joRu3zWhMUxNCvXNWkcEc9RBbDSwLmIL.jpg" alt="">
           </div>
           <div class="name">
             <h5>
-              Ring
+              special chicken
             </h5>
           </div>
         </div>
@@ -249,11 +274,11 @@
             </h6>
           </div>
           <div class="img-box">
-            <img src="images/i-3.png" alt="">
+            <img src="https://tuma250.com/wp-content/uploads/2021/06/Mutzig-55cl.webp" alt="">
           </div>
           <div class="name">
             <h5>
-              Earings
+              watch with friends
             </h5>
           </div>
         </div>
@@ -275,14 +300,17 @@
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                About Jewellery Shop
+               About GREEN BACK Restaurant,
               </h2>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud
+              
+
+ we believe hospitality is more than just a service — it’s a warm invitation to experience the heart and soul of Rwanda. Situated in the lively city of Musanze, we combine modern comfort with authentic Rwandan charm to offer you a unique dining and lodging experience.
+
+Whether you’re here to enjoy our carefully crafted local cuisine, celebrate a special moment, or simply relax in one of our cozy rooms, our mission is to make you feel right at home. With attentive service, delicious meals inspired by local flavors, and a welcoming atmosphere, GREEN BACK Restaurant is more than just a place to eat or stay — it’s a destination for creating lasting memories.
+
+
             </p>
             <div>
               <a href="">
@@ -293,7 +321,7 @@
         </div>
         <div class="col-md-6">
           <div class="img-box">
-            <img src="images/about-img.png" alt="">
+            <img src="https://i.pinimg.com/originals/e4/14/28/e41428810fda01a2a8adae096d8ed405.jpg" alt="">
           </div>
         </div>
       </div>
@@ -308,73 +336,212 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          Our Jewellery Price
+          Drinks
         </h2>
       </div>
       <div class="price_container">
         <div class="box">
           <div class="name">
             <h6>
-              Diamond Ring
+              Fanta
             </h6>
           </div>
           <div class="img-box">
-            <img src="images/p-1.png" alt="">
+            <img src="https://m.media-amazon.com/images/I/31bLLoMOu6L.jpg" alt="">
           </div>
           <div class="detail-box">
             <h5>
-              $<span>1000.00</span>
+              .<span>700Rwf-1000Rwf</span>
             </h5>
-            <a href="">
-              Buy Now
+            <a href="Order.html">
+              Order Now
             </a>
           </div>
         </div>
         <div class="box">
           <div class="name">
             <h6>
-              Diamond Ring
+              Mitsigg
             </h6>
           </div>
           <div class="img-box">
-            <img src="images/i-2.png" alt="">
+            <img src="https://tuma250.com/wp-content/uploads/2021/06/Mutzig-65cl.webp" alt="">
           </div>
           <div class="detail-box">
             <h5>
-              $<span>1000.00</span>
+              .<span>1,800Rwf-2000Rwf</span>
             </h5>
-            <a href="">
-              Buy Now
+            <a href="Order.html">
+              Order Now
             </a>
           </div>
         </div>
         <div class="box">
           <div class="name">
             <h6>
-              Diamond Ring
+              Primus
             </h6>
           </div>
           <div class="img-box">
-            <img src="images/i-3.png" alt="">
+            <img src="https://isokko.com/m/media/upload/photos/2024/10/PRIMUSLIQUID50CLX20_67177b8f392cf.jpg" alt="">
           </div>
           <div class="detail-box">
             <h5>
-              $<span>1000.00</span>
+              .<span>1500Rwf</span>
             </h5>
-            <a href="">
-              Buy Now
+            <a href="Order.html">
+              Order Now
             </a>
           </div>
         </div>
       </div>
       <div class="d-flex justify-content-center">
-        <a href="" class="price_btn">
+        <a href="drinks.html" class="price_btn">
           See More
         </a>
       </div>
     </div>
   </section>
-
+  <section class="price_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Food
+        </h2>
+      </div>
+      <div class="price_container">
+        <div class="box">
+          <div class="name">
+            <h6>
+              Chicken meat
+            </h6>
+          </div>
+          <div class="img-box">
+            <img src="https://media.gettyimages.com/id/184832525/photo/roasted-chicken.jpg?s=612x612&w=0&k=20&c=On2h2FavMl0ZELbGV4Hkc3doqKxeGWNRLRU9rYvV7cI=" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              .<span>18,000Rwf</span>
+            </h5>
+            <a href="Order.html">
+              Order Now
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="name">
+            <h6>
+              Fish
+            </h6>
+          </div>
+          <div class="img-box">
+            <img src="https://media.istockphoto.com/id/179126259/photo/grilled-trout.jpg?s=612x612&w=0&k=20&c=DArjQtBfEbECx6oBoxNx_GJzTEcD3sFDzP0iaXIPeF4=" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              .<span>17,000Rwf</span>
+            </h5>
+            <a href="Order.html">
+              Order Now
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="name">
+            <h6>
+              Invange
+            </h6>
+          </div>
+          <div class="img-box">
+            <img src="https://www.tripsavvy.com/thmb/TJLBedlPW2mwhhPbyR_tfo-nuIM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/7420263548_616353ec0b_k-98641ce4c6df427b82898b37fefbf7c3.jpg" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              .<span>5000Rwf</span>
+            </h5>
+            <a href="Order.html">
+              Order Now
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <a href="food.html" class="price_btn">
+          See More
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="price_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Rooms
+        </h2>
+      </div>
+      <div class="price_container">
+        <div class="box">
+          <div class="name">
+            <h6>
+              Standard Room
+            </h6>
+          </div>
+          <div class="img-box">
+            <img src="https://images.trvl-media.com/lodging/19000000/18420000/18418000/18417904/b22bda0e_y.jpg" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              .<span>8/10,000Rwf</span>
+            </h5>
+            <a href="Order.html">
+              Order Now
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="name">
+            <h6>
+              Deluxe Room
+            </h6>
+          </div>
+          <div class="img-box">
+            <img src="https://www.lemigohotel.com/web/image/1171-487027ac/DSC00648.webp" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              .<span>8/10,000Rwf</span>
+            </h5>
+            <a href="Order.html">
+              Order Now
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="name">
+            <h6>
+              Family Room
+            </h6>
+          </div>
+          <div class="img-box">
+            <img src="https://media.gettyimages.com/id/1006187120/photo/beautiful-modern-hotel-room.jpg?s=612x612&w=0&k=20&c=4x_ipIm_qEhQowj-ppiQgUALWPdKtDX9OgtJwW7TuZA=" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              .<span>10/12,000Rwf</span>
+            </h5>
+            <a href="Order.html">
+              Order Now
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <a href="rooms.html" class="price_btn">
+          See More
+        </a>
+      </div>
+    </div>
+  </section>
   <!-- end price section -->
 
   <!-- ring section -->
@@ -392,16 +559,16 @@
                 special
               </h4>
               <h2>
-                Wedding Ring
+               We make delivery with Vuba Vuba 
               </h2>
-              <a href="">
-                Buy Now
+              <a href="Order.html">
+                Order Now
               </a>
             </div>
           </div>
           <div class="col-md-7">
             <div class="img-box">
-              <img src="images/ring-img.jpg" alt="">
+              <img src="https://blog.catchyz.com/wp-content/uploads/2020/10/vuba-vuba-2.png" alt="">
             </div>
           </div>
         </div>
@@ -417,11 +584,11 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          Testimonial
+          Customers message
         </h2>
       </div>
       <h4 class="secondary_heading">
-        What is says our customer
+        What our customers says 
       </h4>
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -442,8 +609,7 @@
               </div>
               <div class="detail-box">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum
+                  From the moment I arrived, everything was perfect! The room was spotless, beautifully designed, and incredibly comfortable. The staff went above and beyond to make me feel welcome. I especially loved the food — every meal was a delight. GREEN BACK Restaurant and GREEN BACKs is now my go-to place whenever I’m in town. Highly recommended!
                 </p>
               </div>
             </div>
@@ -452,21 +618,20 @@
             <div class="client_container">
               <div class="client-id">
                 <div class="img-box">
-                  <img src="images/client.png" alt="">
+                  <img src="https://media.gettyimages.com/id/915357112/photo/happy-black-man-holding-a-bagel-with-vegetables-ready-to-eat-it.jpg?s=612x612&w=0&k=20&c=kSiJVJbbFAzUq89VWp344edirIuLuRu24dkOSgJd03s=" alt="">
                 </div>
                 <div class="name">
                   <h5>
-                    Aliqua
+                    Mugabo steven
                   </h5>
                   <h6>
-                    Consectetur adipiscing
+                  local clients
                   </h6>
                 </div>
               </div>
               <div class="detail-box">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum
+                  Uko nagendaga mpagera, byose byari byiza cyane! Icyumba cyari gisukuye, cyateguwe neza kandi cyari cyoroshye cyane. Abakozi bakoze ibishoboka byose ngo banyitwararike neza. Ibyokurya byari ibiryoheye cyane — buri funguro ryose ryari ryiza. GREEN BACK Restaurant&GREEN BACKs ni ho nzajya mpitamo igihe cyose nzaba ndi mu mujyi. Ndabashimira cyane!
                 </p>
               </div>
             </div>
@@ -550,7 +715,7 @@
         <div class="col-md-6">
           <div class="map_container">
             <div class="map-responsive">
-              <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.438487693889!2d29.641345272943717!3d-1.506908198478948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dc5bca4862a299%3A0xc542dc50bff30d25!2sGREEN BACK!5e0!3m2!1sen!2srw!4v1748960678043!5m2!1sen!2srw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
@@ -568,9 +733,9 @@
           <div class="col-md-3">
             <div class="info_logo">
               <a href="">
-                <img src="images/logo.png" alt="">
+                <img src="https://images.freeimages.com/variants/rfQ5JBj67nBEN91zkMAQhvvi/624f0dc1dff9bdccab032f93c33e79de78481770e79e21d3b0469daf51f02797" alt="">
                 <span>
-                  Lodge
+                  GREEN BACK
                 </span>
               </a>
             </div>
@@ -580,7 +745,7 @@
               <a href="">
                 <img src="images/location.png" alt="">
                 <span>
-                  Address
+                  musanze,ruhengeri
                 </span>
               </a>
             </div>
@@ -590,7 +755,7 @@
               <a href="">
                 <img src="images/phone.png" alt="">
                 <span>
-                  +01 1234567890
+                  +250782864245
                 </span>
               </a>
             </div>
@@ -600,7 +765,7 @@
               <a href="">
                 <img src="images/mail.png" alt="">
                 <span>
-                  demo@gmail.com
+                  GREEN BACKrestaurant@gmail.com
                 </span>
               </a>
             </div>
@@ -640,7 +805,7 @@
             <a href="">
               <img src="images/linkedin.png" alt="">
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/greenbackrestourant/">
               <img src="images/insta.png" alt="">
             </a>
           </div>
@@ -648,18 +813,122 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- end info_section -->
 
   <!-- footer section -->
   <section class="container-fluid footer_section">
     <p>
       &copy; <span id="displayYear"></span> All Rights Reserved By
-      <a href="https://html.design/">Free Html Templates</a>
+      <a href="https://html.design/">nexgen coders ,+250791820286,+2507986289 carousel-indicators</a>
     </p>
   </section>
   <!-- footer section -->
+  <a href="https://wa.me/250782864245" target="_blank" 
+   style="
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     z-index: 1000;
+     background-color: #25D366;
+     border-radius: 50%;
+     padding: 12px;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 60px;
+     height: 60px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+   ">
+  <img src="https://img.icons8.com/ios-filled/30/ffffff/whatsapp.png" 
+       alt="WhatsApp"
+       style="width: 30px; height: 30px;">
+  <style>
+    @media (max-width: 480px) {
+      a[href^="https://wa.me"] {
+        bottom: 15px !important;
+        right: 150px !important;
+        width: 50px !important;
+        height: 50px !important;
+        padding: 10px !important;
+      }
 
+      a[href^="https://wa.me"] img {
+        width: 24px !important;
+        height: 24px !important;
+      }
+    }
+  </style>
+</a>
+
+
+  <!-- Chatbot Icon and Box -->
+<div id="chatbot-icon" onclick="toggleChatbot()" 
+style="position: fixed; bottom: 100px; right: 20px; z-index: 1000; 
+       width: 60px; height: 60px; background: #00796b; border-radius: 50%; 
+       display: flex; align-items: center; justify-content: center; 
+       cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+       
+<img src="https://img.icons8.com/ios-filled/30/ffffff/chat.png" alt="Chat">
+</div>
+
+<div id="chatbot-box" style="display: none; position: fixed; bottom: 170px; right: 20px; 
+width: 300px; max-height: 400px; overflow-y: auto; 
+background: white; border: 1px solid #ccc; border-radius: 12px; 
+box-shadow: 0 6px 20px rgba(0,0,0,0.2); padding: 15px; z-index: 1001;">
+<strong style="color:#00796b;">Chatbot Assistant</strong>
+<input type="text" id="chatbot-input" placeholder="Ask a question..." 
+    onkeyup="handleQuestion(event)" 
+    style="margin-top: 10px; width: 100%; padding: 8px; border: 1px solid #ddd; 
+           border-radius: 6px; margin-bottom: 10px;">
+<div id="chatbot-response" style="font-size: 0.95rem; color: #333;"></div>
+</div>
+
+<script>
+const chatbotData = {
+  "hi":"hello welcome to green back restaurant. ask location",
+  "location":"black restaurant located in musanze,ruhengeri",
+"what are your opening hours": "We are open from 8 AM to 10 PM every day.",
+"do you offer vegetarian options": "Yes, we have several delicious vegetarian meals.",
+"can i book a table": "Yes! You can book online or contact us via WhatsApp.",
+"do you deliver food": "Yes, we offer home delivery within 10km.",
+"what’s today’s special": "Today’s special is grilled tilapia with garlic sauce.",
+"where are you located": "We are located in Kampala, near Garden City.",
+"how much is a pizza": "Our pizzas start at UGX 18,000.",
+"do you offer drinks": "Yes, we serve juices, sodas, wine, and cocktails.",
+"can i pay with mtn mobile money": "Absolutely. Our number is 085478.",
+"do you have wifi": "Yes, free Wi-Fi is available for all customers.",
+// ADDING 90 MORE BELOW...
+};
+
+// Fill the remaining 90 questions
+for (let i = 11; i <= 100; i++) {
+chatbotData[`question ${i}`] = `This is the answer for question ${i}.`;
+}
+
+function toggleChatbot() {
+const box = document.getElementById('chatbot-box');
+box.style.display = box.style.display === 'none' ? 'block' : 'none';
+}
+
+function handleQuestion(event) {
+if (event.key === 'Enter') {
+ const input = document.getElementById('chatbot-input');
+ const responseBox = document.getElementById('chatbot-response');
+ const userQuestion = input.value.trim().toLowerCase();
+ const answer = chatbotData[userQuestion] || "Sorry, I don't have an answer for that yet.";
+ responseBox.innerText = answer;
+ input.value = '';
+}
+}
+</script>
+<script>
+  function toggleMobileMenu() {
+    const nav = document.getElementById('mobileNav');
+    nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>

@@ -1,6 +1,6 @@
-$btnColor: #121212;
-$white: #ffffff;
-$black:#000000;
+.btnColor: #121212;
+.white: #ffffff;
+.black:#000000;
 
 @mixin main-font {
   font-family: "Poppins", sans-serif;
@@ -8,17 +8,17 @@ $black:#000000;
 
 @mixin secondary-font {}
 
-@mixin hero_btn($col1, $col2, $pad1, $pad2, $b-radius) {
+@mixin hero_btn(.col1, .col2, .pad1, .pad2, .b-radius) {
   display: inline-block;
-  padding: $pad1 $pad2;
-  background-color: $col1;
-  border: 1px solid $col1;
-  color: $col2;
-  border-radius: $b-radius;
+  padding: .pad1 .pad2;
+  background-color: .col1;
+  border: 1px solid .col1;
+  color: .col2;
+  border-radius: .b-radius;
 
   &:hover {
     background-color: transparent;
-    color: $col1;
+    color: .col1;
   }
 }
 
@@ -118,7 +118,7 @@ body {
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
   padding: 10px 30px;
-  color: $white;
+  color: .white;
   text-align: center;
 }
 
@@ -183,7 +183,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-toggler .navbar-toggler-icon {
-  background-image: url(../images/menu.png);
+  background-image: url(../images/.);
   background-size: 45px;
 }
 
@@ -192,7 +192,7 @@ a:focus {
   align-items: center;
 
   a {
-    color: $black;
+    color: .black;
     position: relative;
 
     .cart_number {
@@ -200,7 +200,7 @@ a:focus {
       top: 68%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color: $white;
+      color: .white;
       font-size: 12px;
     }
 
@@ -248,7 +248,7 @@ a:focus {
       width: 1px;
       height: 50px;
       border: none;
-      background-color: $white;
+      background-color: .white;
     }
 
     .number-box {
@@ -256,7 +256,7 @@ a:focus {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      color: $white;
+      color: .white;
       text-transform: uppercase;
     }
   }
@@ -281,7 +281,7 @@ a:focus {
         border: none;
         width: 55px;
         height: 1px;
-        background-color: $black;
+        background-color: .black;
       }
     }
 
@@ -293,7 +293,7 @@ a:focus {
     }
 
     a {
-      @include hero_btn(#0d0806, $white, 8px, 40px, 0);
+      @include hero_btn(#0d0806, .white, 8px, 40px, 0);
       margin: 35px 0;
     }
   }
@@ -409,7 +409,7 @@ a:focus {
     }
 
     a {
-      @include hero_btn(#0d0806, $white, 8px, 40px, 0);
+      @include hero_btn(#0d0806, .white, 8px, 40px, 0);
       margin-top: 35px;
     }
   }
@@ -446,7 +446,7 @@ a:focus {
       margin: 35px 10px;
       padding: 45px 0 25px 0;
       text-align: center;
-      background-color: $white;
+      background-color: .white;
       -webkit-box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.05);
       -moz-box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.05);
       box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.05);
@@ -481,9 +481,9 @@ a:focus {
         a {
           display: inline-block;
           padding: 5px 15px;
-          border: 1px solid $black;
+          border: 1px solid .black;
           font-weight: bold;
-          color: $black;
+          color: .black;
           margin-top: 15px;
         }
       }
@@ -498,7 +498,7 @@ a:focus {
   }
 
   .price_btn {
-    @include hero_btn(#0d0806, $white, 8px, 40px, 0);
+    @include hero_btn(#0d0806, .white, 8px, 40px, 0);
   }
 }
 
@@ -546,9 +546,9 @@ a:focus {
       a {
         display: inline-block;
         padding: 5px 15px;
-        border: 1px solid $black;
+        border: 1px solid .black;
         font-weight: bold;
-        color: $black;
+        color: .black;
         margin-top: 15px;
       }
     }
@@ -734,14 +734,14 @@ a:focus {
 // info section
 .info_section {
   background-color: #363636;
-  color: $white;
+  color: .white;
 
   .info_container {
     .info_logo {
       display: flex;
       justify-content: center;
       padding: 100px 10px 45px 10px;
-      background-color: $white;
+      background-color: .white;
       width: 200px;
       border-radius: 0 0 50px 50px;
 
@@ -756,7 +756,7 @@ a:focus {
 
         span {
           text-transform: uppercase;
-          color: $black;
+          color: .black;
           font-size: 28px;
           font-weight: bold;
         }
@@ -772,7 +772,7 @@ a:focus {
           margin-right: 10px;
         }
 
-        color: $white;
+        color: .white;
       }
     }
   }
@@ -814,7 +814,7 @@ a:focus {
       input {
         width: 500px;
         border: none;
-        background-color: $white;
+        background-color: .white;
         outline: none;
         padding: 5px;
       }
@@ -865,7 +865,7 @@ a:focus {
 }
 
 .footer_section p {
-  border-top: 1px solid $white;
+  border-top: 1px solid .white;
   color: #9c9b9b;
   margin: 0;
   text-align: center;

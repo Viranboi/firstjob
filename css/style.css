@@ -2,6 +2,43 @@ body {
   font-family: "Poppins", sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
+  background-image: url("https://i.postimg.cc/G3kbP3ZT/36b5fe20-6017-4be9-9ca9-f811edbde071.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Enable parallax effect on large screens */
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  body {
+    background-image: none; /* Remove image on small screens */
+    background-attachment: initial; /* Disable fixed scrolling on small screens */
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container, .content, .section {
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-size: 90%;
+  }
+
+  p {
+    font-size: 95%;
+  }
 }
 
 .layout_padding {
@@ -53,12 +90,21 @@ body {
 .hero_area {
   height: 100vh;
   position: relative;
-  background-image: url(../images/hero-bg.png);
-  background-size: cover;
-  background-position: bottom right;
+  background-image: url('https://i.postimg.cc/SKqDv0nf/Screenshot-at-2025-06-03-10-11-27.png');
+  background-size: 100%;
+  background-position: center;
   background-repeat: no-repeat;
+  animation: zoomInOut 20s infinite ease-in-out;
 }
 
+@keyframes zoomInOut {
+  0%, 100% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 115%;
+  }
+}
 .sub_page .hero_area {
   height: auto;
   background-position: top right;
@@ -79,7 +125,7 @@ body {
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
   padding: 10px 30px;
-  color: #ffffff;
+  color: black;
   text-align: center;
 }
 
@@ -143,7 +189,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-toggler .navbar-toggler-icon {
-  background-image: url(../images/menu.png);
+  background-image: url(../images/.);
   background-size: 45px;
 }
 
@@ -911,4 +957,187 @@ a:focus {
 .footer_section a {
   color: #9c9b9b;
 }
-/*# sourceMappingURL=style.css.map */
+/* Hide menu icon by default */
+.mobile-menu-icon {
+  display: none;
+  font-size: 28px;
+  position: fixed;
+  top: 20px;
+  right: 160px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Mobile nav styles */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 60px;
+  right: 160px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 10px;
+  z-index: 999;
+  text-align: right;
+}
+
+.mobile-nav a {
+  display: block;
+  margin: 10px 0;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Show menu icon and nav on small screens only */
+@media (max-width: 800px) {
+  .mobile-menu-icon {
+    display: block;
+  }
+}
+/* === Responsive Styles for Mobile Devices === */
+@media (max-width: 700px) {
+
+  /* General container adjustments */
+  .container {
+    padding: 0 10px;
+  }
+
+  /* Navbar */
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+  /* Main section (hero) */
+  .main {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  .mainText {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* Slider section */
+  .slider {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .slider img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Items */
+  .items {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .item {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* About section */
+  .about {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  .aboutText {
+    text-align: center;
+  }
+
+  .about img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* Pricing section */
+  .price {
+    padding: 50px 20px;
+  }
+
+  .p-cards {
+    flex-direction: column;
+  }
+
+  .p-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Ring section */
+  .ring {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .ring form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Client section */
+  .client {
+    padding: 50px 20px;
+  }
+
+  .c-cards {
+    flex-direction: column;
+  }
+
+  .c-card {
+    width: 100%;
+  }
+
+  /* Contact section */
+  .contact {
+    padding: 50px 20px;
+  }
+
+  .contact form {
+    flex-direction: column;
+  }
+
+  .contact input,
+  .contact textarea {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 30px 10px;
+    text-align: center;
+  }
+
+}
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-size: 14px; /* Optional: reduce font size for better fit */
+  }
+
+  .container {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
